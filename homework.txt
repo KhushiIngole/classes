@@ -1,0 +1,32 @@
+class College:
+    def __init__(self, student, teacher):
+        self.student = student
+        self.teacher = teacher
+
+class Student:
+    def __init__(self, roll, name, marks, address):
+        self.roll = roll
+        self.name = name
+        self.marks = marks
+        self.address = address
+
+class Teacher:
+    def __init__(self, name, salary, dep, address):
+        self.name = name
+        self.salary = salary
+        self.dep = dep
+        self.address = address
+
+class Address:
+    def __init__(self, city, pincode):
+        self.city = city
+        self.pincode = pincode
+
+a1 = Address("Pune", 411001)
+a2 = Address("Mumbai", 400001)
+
+s1 = Student(1, "Khushi", 85, a1)
+
+t1 = Teacher("Snehal", 50000, "IT", a2)
+
+c1 = College(s1, t1)
